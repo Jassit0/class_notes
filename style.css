@@ -1,0 +1,66 @@
+/* Para ligar CSS con HTML se crea un elemento "link" debajo de donde está el titulo "Webb espacial", siempre dentro de "head"*/
+body{
+    background-color: #ffb3c6 ;
+    
+/*Para colocar una imagen como fondo de pantalla
+
+    background-image: url(colocar la url de internet); */
+
+/*Pero hay que asegurarnos de qu el tamaño de la imagen cubra todo, en todo caso se tiene que repetir
+
+    background-repeat: no-repeat; */
+
+
+    /*Para cambiar la letra se coloca font-family*/
+    font-family: 'Rationale', sans-serif;
+
+    color: blue;
+}
+
+/*
+body es el selector {
+    propiedad : valor ;
+}
+*/
+
+/*el ancho (width) y la altura (height) de la imagen se puede ajustar con base en el porcentaje que quiero que ocupe de mi pantalla, o bien, los pixeles px*/
+
+/*Para editar sólo el tamaño de una imagen, hay que agregar un atributo extra en el HTML que se llama "class"*/
+
+img{
+    width: 100%;
+}
+.humbble{
+    width: 400px;
+    /*border-radius para redondear los bordes*/
+    border-radius: 50px;
+}
+
+
+/*---------SESION 5-----11 DE JULIO*/
+
+/*Para cambiar el color de sólo las letras, tenemos que volver a poner el atributo class, en el apartado donde se encuentra el titulo*/
+/*Recordar que class solo se coloca con un punto dentro de CSS*/
+.title-astrobiología {
+    font-size: 40px;
+}
+
+.p-origen{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-misiones{
+    color: aliceblue;
+}
+
+/*Para cambiar el color de las letras de toda la página, no necesitamos poner un atributo class, porque todos los elementos están dentro de body*/
+
+.title-universo{
+    font-size: 50px;
+}
+
+.main-title{
+    font-family: 'Borel', cursive,'Rationale', sans-serif;
+    color: yellow;
+    text-shadow: 1px 1px 2px black;
+}

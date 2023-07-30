@@ -1,0 +1,180 @@
+<!--SESION 3--5 DE JULIO DE 2023-->
+
+<!--Si seleccionamos html:5 automaticamente se ponen todos los espacios-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web espacial</title>
+
+
+
+<!--el elemento link me va a permitir conectar otros documentos con mi HTML--> 
+<!--el atributo stylesheet significa cuál es la relación que existe con el link que se va a conectar (hoja de estilos), mientras que el href dice de donde viene mi documento, ¿Cuál es la referencia?-->
+
+    <link rel="stylesheet" href="/style.css">
+
+
+<!--Para cambiar el estilo de letra, copiamos el enlace que aparece en Google fonts y de esta forma se conecta con HTML-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+    <!--Ahora para llamarlo, regreso a Google fonts y pego el enlace que aparece más abajo y lo pego en mi archivo CSS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Rationale&display=swap" rel="stylesheet">
+
+
+
+</head>
+<!--body--es todo nuestro contenido, es decir, lo que se ve-->
+<body>
+    <!--main-- es el contenido principal de la pagína-->
+    <main>
+        <h1 class="main-title">Webb espacial</h1>
+
+
+<!--AQUÍ MOVÍ EL INDICE CON ANCLAS QUE CREÉ EN LA SESIÓN 4-->
+
+  <!--INDICE CON ANCLAS-->
+        <!--a (ancla)-- crea un enlace a otras paginas de internet, archivos o ubicaciones dentro del documento, es como un hipervinculo -->
+        <div>
+            <!--El # me indica que va a ser una seccion dentro de mi página web que va a buscar HTML, pero hay que crear el elemento párrafo  -->
+        
+            <!--href--prácticamente significa ¿cuál es la referencia?-->
+            <a href="#astrobiología">Astrobiología</a>
+            <br>
+            <a href="#universo">Origen del universo</a>
+            <br>
+            <a href="#estrellas">Origen de las estrellas</a>
+        </div>
+
+
+
+        <!--img--Hay dos formas de poner imagenes, una es pegando el link y otra desde una carpeta de nuestra computadora-->
+        <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/589552main_as11-40-5875_full.jpg" alt="54 Years Ago: Apollo 11 Crew Walks on the Moon">
+
+
+
+<!--Agregué el atributo class para poder editar solo el tamaño de una de mis imagenes en CSS-->
+        <img class="humbble" src="/images/webb espacial.jpg" alt="Hubble Glimpses a Glistening Cluster">       
+        
+        
+
+        <!--div--es como una cajita invisible que sirve para crear divisiones o secciones-->
+        <div>
+            <!--LISTAS-->
+            <h3>Top de estrellas más masivas</h3>
+            <!--ol--listas ordenadas-->
+            <ol>
+                <!--se puede poner el número de filas que necesitamos colocando li*n-->
+                <li>estrella hipergigante azul</li>
+                <li>estrella pequeña</li>
+                <li>estrella mediana</li>
+                
+            <h3 class="title-misiones">Misiones espaciales</h3>
+            <!--ul--listas NO ordenadas, aparecen con viñetas-->
+            <ul>
+                <li>Apolo 8</li>
+                <li>Géminis</li>
+                <li>Apolo 11</li>
+                <li>Luna</li>
+                <li>Curiosity</li>
+
+            </ul>
+
+        </div>
+
+
+
+<!--SESION 4--10 DE JULIO DE 2023-->
+
+        <!--hr_división horizontal-->
+        <hr>
+        
+
+<!--MOVÍ HASTA ARRIBA TODO LO REFERENTE AL INDICE CON ANCLAS #Astrobiología, #universo y #estrellas-->
+
+        
+        <!--id--significa identificador, es decir al elemento h3 le estoy dando un identificador que se llama astrobiología (se tiene que escribir exactamente como lo hice en href)-->
+        <h3  class="title-astrobiología" id="astrobiología"> Astrobiología </h3>
+        <p>
+            <!--Ir a View y seleccionar Word Wrap para que el texto no sea líneal y se vea como parrafo-->
+            La Astrobiología es el conjunto de estudios de carácter científico, cuyo interés fundamental se concentra en el origen, evolución, distribución y destino de la vida en el Universo, considerando a la Tierra como dentro del mismo.
+            <!--br__significa break y es para hacer un espacio-->
+            <br>
+            ¿Qué es la vida? ¿Cómo se originó en nuestro planeta? ¿La vida en la Tierra podría sobrevivir en otros mundos o lunas del Universo? ¿Qué es un ambiente extremo?
+            <br>
+            Estas preguntas podrían sonar un tanto filosóficas, pero la ciencia también se ha encargado de buscar respuestas y lo ha hecho conjuntando estudios científicos de diversas disciplinas, especialmente de la astronomía y la biología. Esta unión, Astrobiología, se encarga de estudiar la vida en el Universo.
+            <br>
+            Para delimitar estos estudios, los astrobiólogos suelen dividirlos desde perspectivas espacio-temporales: las subdivisiones espaciales consideran la vida en la Tierra, la vida en el Sistema Solar y la vida fuera del Sistema Solar. Las perspectivas temporales incluyen el pasado, presente y futuro. Siempre analizando el origen de las formas de vida, en qué condiciones, cuáles son las características y cómo pueden evolucionar.
+        </p>
+        <h3 class="title-universo" id="universo"> Origen del universo</h3>
+<!--Igualmente colocamos un atributo class, para poder modificarlo en CSS-->
+        <p class="p-origen">
+            El Universo nació, según muestran las observaciones en diversos campos astrofísicos,hace aproximadamente unos 14.000 millones de años. 
+            <br>
+            En la actualidad la teoría más aceptada sobre el origen del Universo es la del Big-bang o Gran Explosión. La idea de un Universo en expansión, propuesta por el astrónomo Edwin Hubble, parte del hecho de que el Universo se expande de modo que cada galaxia se aleja de nosotros a una velocidad proporcional a su distancia. La velocidad de alejamiento de un astro se puede determinar por su espectro, pues cuando un astro se aleja las líneas de su espectro se desplazan hacia las zonas con longitudes de onda largas, que corresponden al color rojo (por ello se habla de un “corrimiento al rojo”). El caso contrario ocurre cuando un astro se acerca, y sus líneas espectrales tienden a longitudes de onda cortas, correspondientes al color azul. Entonces, si el Universo se está expandiendo, en un pasado tuvo un tamaño mínimo a partir del cual comenzó a expandirse. Para saber en qué momento inició esto se han hecho varios cálculos. Uno de ellos es el que parte de la velocidad actual de alejamiento de los astros y va hacia atrás en el tiempo hasta el momento en que se originó el Universo, cuya edad se ha estimado en alrededor de 15 mil millones de años.
+        </p>
+        <h3 id="estrellas">Origen de las estrellas</h3>
+        <p>
+            Tanto su nacimiento como su muerte dependen de su masa. Todas las estrellas inician su formación dentro de una enorme nube de gas y polvo cósmico llamada nebulosa. Las nebulosas están constituidas fundamentalmente por átomos de hidrógeno y helio, que darán lugar a nuevas estrellas.
+            <br>
+            La evolución estelar trata sobre los cambios que se producen en las estrellas hasta su muerte.
+            La gravedad obliga a las estrellas a irradiar energía. Para equilibrar esta pérdida de energía, las estrellas producen energía por la fusión nuclear de elementos más ligeros en otros más pesados. Este proceso cambia lentamente su composición química, y por lo tanto, sus otras propiedades. Con el tiempo, las estrellas agotan su combustible nuclear y mueren. Comprender la naturaleza y evolución de las estrellas nos ayuda a entender y apreciar la naturaleza y evolución de nuestro Sol, la estrella que hace posible la vida en la Tierra. Nos ayuda a entender el origen de nuestro Sistema Solar y de los átomos y moléculas de las que todo, incluyendo la vida, está hecho. Nos ayuda a responder cuestiones tan fundamentales como "¿es posible que otras estrellas produzcan suficiente energía, vivan lo suficiente y permanezcan estables el tiempo suficiente como para que la vida pueda desarrollarse y evolucionar en los planetas que las orbitan?
+        </p>
+
+        <!--FORMULARIOS-->
+
+        <!--form___es un elemento al cual se le enviará información-->
+        <!--action__es la ruta a la cual voy a enviar la información, pero por el momento no lo vamos a utilizar, por eso se elimina-->
+        <form>
+            <p>¿Cuál es la edad del Universo?</p>
+            <!--label__es una etiqueta para poder asociar cada una de las respuestas-->
+            <!--for es un atributo que funciona como un identificador interno, es como algo extra que nos dice a qué se refiere la respuesta-->
+            <label for="edad-universo">
+                <!--input___crea un cuadro de texto que permite al usuario poder escribir su respuesta-->
+                <input type="text">
+                <!--button___literal crea un boton interactivo -->
+                <button>Enviar</button>
+            </label>
+
+            <p>¿Cuántas misiones Apolo existieron?</p>
+            <label for="3-misiones">
+                <!--Ponemos el atributo name con una palabra clave para que el sistema entienda que la respuesta corresponde a la pregunta sobre apolo,y como tengo el tipo radio, solo me permite elegir entre una respuesta u ota, caso que checkbox me permite elegir ambas o muchas respuestas-->
+                <input type="radio" name="apolo"> 3 misiones
+            </label>
+            <label for="10-misiones">
+                <input type="radio" name="apolo"> 10 misiones
+            </label>
+
+             <!--tambien se puede elegir checkbox en lugar de radio, y permite elegir más de una opción a la vez-->
+            <p>¿Qué objetos celestes existen?</p>
+            <label for="galaxias">
+                <input type="checkbox" name="celeste"> Galaxias
+            </label>
+            <label for="planetas">
+                <input type="checkbox" name="celeste"> Planetas
+            </label>
+            <label for="nebulosas">
+                <input type="checkbox" name="celeste"> Nebulosas
+            </label>
+            <label for="satélites">
+                <input type="checkbox" name="celeste"> Satélites
+            </label>
+            <label for="plantas">
+                <input type="checkbox" name="celeste"> Plantas
+            </label>
+            <label for="agujeros">
+                <input type="checkbox" name="celeste"> Agujeros
+            </label>
+    
+            
+        </form>
+
+    </main>
+
+</body>
+</html>
